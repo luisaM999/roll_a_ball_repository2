@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public Vector2 moveInput; //Almacén del input de movimiento de los periféricos que usamos para jugar
 
     [Header("Jump Parameters")]
-    public float jumpForce = 6;
+    public float jumpForce = 10;
     public bool isGrounded = true;
 
     [Header("Respawn System")]
@@ -93,6 +93,8 @@ public class PlayerController : MonoBehaviour
         playerAudio.PlayOneShot(soundCollection[soundToPlay]);
     }
 
+
+   
     #region Input Methods
 
     public void OnMove(InputAction.CallbackContext context)
